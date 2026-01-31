@@ -36,20 +36,13 @@ const Navbar = () => {
             className="py-1.5 w-full text-gray-600 bg-transparent  placeholder-gray-500 outline-none"
           />
           <img src={assets.search_icon} alt="search" />
+          {/* dashbaord and login */}
         </div>
 
         <div>
             <button className="cursor-pointer">Dashbaord</button>
             <button > Login</button>
         </div>
-
-
-
-
-
-
-
-
 
       </div>
     </div>
