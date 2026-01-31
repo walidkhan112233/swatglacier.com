@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+@import "tailwindcss";
+
+*{
+  font-family: "Fjalla One", sans-serif;
+}
+
+@theme{
+  --color-primary: #2599cf;
+  --color-primary-dull : #25a1db;
+  --color-light : #edf5fc;
+  --color-borderColor : #c5d7e6;
+}
