@@ -1,10 +1,13 @@
 import React from "react";
 import { assets, menuLinks } from "../assets/assets";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
+
 const Navbar = () => {
   const location = useLocation();
 
   const [Open, setOpen] = React.useState(false);
+  const navigate = useNavigate();
 
   return (
     <div
