@@ -3,7 +3,7 @@ import { assets, menuLinks } from "../assets/assets";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
   const location = useLocation();
 
   const [Open, setOpen] = React.useState(false);
@@ -43,11 +43,16 @@ const Navbar = () => {
         </div>
 
         <div className="flex max-sm:flex-col items-start sm:items-center gap-6"  >
-            <button className="cursor-pointer">Dashbaord</button>
-            <button className="cursor-pointer px-8 py-2 bg-primary hover:bg-primary-dull transition-all text-white rounded-lg" > Login</button>
+            <button onClick={() => navigate('/owner')} className="cursor-pointer">Dashbaord</button>
+            <button onClick={() => setShowLogin(true)} className="cursor-pointer px-8 py-2 bg-primary hover:bg-primary-dull transition-all text-white rounded-lg" > Login</button>
         </div>
 
       </div>
+
+        <button>
+        <img src={open ? assets.close_icon : assets.menu_icon} alt="menu" className="h-6 w-6 max-sm:block hidden" onClick={() => setOpen(!Open) } />
+        </button>
+
     </div>
   );
 };
