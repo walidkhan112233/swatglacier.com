@@ -44,7 +44,7 @@ import Regular_150Lr_Cooler from "./Regular_150Lr.jpeg";
 import Regular_250Lr_Cooler from "./Regular_250Lr_Cooler.jpeg";
 
 //cooler banner
-import main_Swat_Glacier_Banner from "./Swat_Glacier_Banner.jpeg";
+import main_Swat_Glacier_Banner from "./Swat_Glacier_Banner.png";
 
 export const cityList = [
   "Karachi",
