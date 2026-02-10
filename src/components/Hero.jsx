@@ -1,11 +1,12 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import HeroSecForm from "./hero-sec-form";
 
 const Hero = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center gap-8 bg-light text-center ">
+    <div className="h-screen flex flex-col pt-24 items-center justify-center gap-8 bg-light text-center ">
 
-      <h1 className="text-4xl md:text-5xl text-blue-500 font-bold mb-0 ">
+      <h1 className="text-4xl md:text-5xl  text-blue-500 font-bold mb-0 ">
         Stay Cool!, Stay Refreshed!
       </h1>
 
@@ -14,13 +15,7 @@ const Hero = () => {
         Complete Renting & Sales Solutions by Swat Glacier
       </h4>
 
-      <form>
-        
-      </form>
-
-
-
-
+        <HeroSecForm /> 
 
       <img
         src={assets.main_Swat_Glacier_Banner}
