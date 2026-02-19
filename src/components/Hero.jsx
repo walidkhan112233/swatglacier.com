@@ -12,7 +12,7 @@ const Hero = () => {
 
       <h4
         className="text-lg md:text-1xl text-gray-600 font-medium leading-none">
-        Complete Renting & Sales Solutions by Swat Glacier
+        Complete Cooler Renting & Sales Solutions by Swat Glacier
       </h4>
 
         <HeroSecForm /> 
