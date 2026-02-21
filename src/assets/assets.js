@@ -195,7 +195,7 @@ export const dummyCoolerData = [
     size: "Medium",
     water_capacity: '150Lr',
     price: 100000,
-    rentAdvancePayment: 25000,
+    rentAdvancePayment: 30000,
     rentPerMonth: 3500,
     location: "Karachi",
     description:

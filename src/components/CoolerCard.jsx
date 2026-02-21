@@ -1,14 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link  , useNavigate} from "react-router-dom";
 
 const CoolerCard = ({ cooler }) => {
+
+  const navigate = useNavigate();
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
+    <div onClick={() => {navigate(`/cooler-details/${cooler._id}`); scrollTo(0,0)}} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
       {/* Image */}
-      <div className="relative">
+      <div className="relative"> 
         <img
           src={cooler.image}
-          alt={`${cooler.category} cooler`}
+          alt={`${cooler.category} cooler`} 
           className="w-full h-44 object-cover"
         />
 
@@ -42,9 +44,9 @@ const CoolerCard = ({ cooler }) => {
         )}
 
         {(cooler.isAvaliableForRent || cooler.isAvailableForRent) && (
-          <div className="text-xs text-gray-700">
+          <div className="text-xs text-gray-800">
             <p>Rent: Rs {cooler.rentPerMonth}/month</p>
-            <p className="text-gray-500">
+            <p className="text-gray-600">
               Advance: Rs {cooler.rentAdvancePayment}
             </p>
           </div>
