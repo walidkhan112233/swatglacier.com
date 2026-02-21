@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { Routes,Route, useLocation } from 'react-router-dom';
 import Home from './pages/home';
 import coolerDetails from './pages/coolerDetails';
-import myBookings from './pages/mybookings';
-import Coolers from './pages/coolers';
+import myBookings from './pages/myBookings';
+import Coolers from './pages/Coolers';
 const App = () => {
 
   const [showLogin, setShowLogin] = useState(false);
