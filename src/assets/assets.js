@@ -46,6 +46,10 @@ import Regular_250Lr_Cooler from "./Regular_250Lr_Cooler.jpeg";
 //cooler banner
 import main_Swat_Glacier_Banner from "./Swat_Glacier_Banner.png";
 
+//CTA Banner coolers with bg
+import Regular_250Lr_Cooler_CTA from "./Regular_250Lr_Cooler-CTA.png";
+import Regular_100Lr_Cooler_CTA from "./Regular_100Lr_Cooler-CTA.png";
+
 export const cityList = [
   "Karachi",
   "Lahore",
@@ -106,6 +110,10 @@ export const assets = {
   Regular_250Lr_Cooler,
   // cooler banner
   main_Swat_Glacier_Banner,
+
+  // CTA Banner coolers with bg
+  Regular_250Lr_Cooler_CTA,
+  Regular_100Lr_Cooler_CTA,
 };
 
 export const menuLinks = [
