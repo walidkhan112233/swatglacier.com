@@ -5,7 +5,7 @@ import FeaturedSec from '../components/FeaturedSec'
 import Banner from '../components/Banner'
 const Home = () => {
   return (
-    <div>
+    <div  >
       <Hero/>
       <FeaturedSec/>
       <Banner/>

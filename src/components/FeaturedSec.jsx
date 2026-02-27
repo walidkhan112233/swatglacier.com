@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const FeaturedSec = () => {
   const navigate = useNavigate();
   return (
-    <section className="bg-light py-16 px-4 md:px-20">
+    <section className="bg-light py-20 px-0 pt-20 md:px-20">
       {/* Title */}
       <Title
         title="Featured Coolers"

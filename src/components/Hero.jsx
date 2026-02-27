@@ -4,7 +4,7 @@ import HeroSecForm from "./hero-sec-form";
 
 const Hero = () => {
   return (
-    <div className="h-screen flex flex-col pt-24 items-center justify-center gap-8 bg-light text-center ">
+    <div className="h-screen flex flex-col pt-25 items-center justify-center gap-8 bg-light text-center pb-10">
 
       <h1 className="text-4xl md:text-5xl  text-blue-500 font-bold mb-0 ">
         Stay Cool!, Stay Refreshed!
