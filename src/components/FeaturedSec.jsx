@@ -14,7 +14,7 @@ const FeaturedSec = () => {
         subTitle="Unleash the chill — built for power, performance, and extreme cooling adventures."
         align="center"
         titleColor="text-blue-500"
-        subColor="text-gray-500"
+        subColor="text-gray-600"
       />
 
       {/* Cards */}

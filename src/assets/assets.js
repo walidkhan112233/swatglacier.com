@@ -30,8 +30,9 @@ import filter_icon from "./filter_icon.svg";
 import edit_icon from "./edit_icon.svg";
 import calendar_icon_colored from "./calendar_icon_colored.svg";
 import location_icon_colored from "./location_icon_colored.svg";
-import testimonial_image_1 from "./testimonial_image_1.png";
-import testimonial_image_2 from "./testimonial_image_2.png";
+import testimonial_image_1 from "./testimonial_image_guy_1.png";
+import testimonial_image_2 from "./testimonial_img_guy_2.png";
+import testimonial_image_3  from "./testimonial_img_guy_3.png";
 import main_car from "./main_car.png";
 import user_profile from "./user_profile.png";
 import upload_icon from "./upload_icon.svg";
@@ -98,6 +99,7 @@ export const assets = {
   filter_icon,
   testimonial_image_1,
   testimonial_image_2,
+  testimonial_image_3,
   main_car,
   upload_icon,
   user_profile,

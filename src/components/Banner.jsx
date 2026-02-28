@@ -8,8 +8,8 @@ const Banner = () => {
   return (
     <section className="bg-light py-10">
       <div className="max-w-6x1  mx-auto px-6 sm:px-10  lg:px-15">
-        <div className="relative bg-gradient-to-r from-[#2599cf] to-[#1e7fb0] text-white rounded-4xl px-8 md:px-14 py-10 md:py-12 overflow-hidden shadow-xl">
-          <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-10">
+        <div className="relative bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-4xl px-8 md:px-14 py-10 md:py-12 overflow-hidden shadow-xl ">
+          <div className="relative z-10 flex flex-col md:flex-row items-center md:items-center justify-between gap-10">
             {/* Left Content */}
             <div className="max-w-3x1 text-center  md:text-left md:w-1/2">
               <h2 className="text-2xl md:text-4xl font-bold leading-tight">
@@ -48,6 +48,7 @@ const Banner = () => {
               />
             </div>
           </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-white/65 pointer-events-none z-0"></div>
         </div>
       </div>
     </section>
