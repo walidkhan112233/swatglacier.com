@@ -34,7 +34,7 @@ const testimonialsData = [
 
 const Testimonial = () => {
   return (
-    <section className="bg-light  py-15 flex flex-col items-center px-0 sm:px-12 lg:px-12">
+    <section className="bg-white  py-15 flex flex-col items-center px-0 sm:px-12 lg:px-12">
       {/* Title */}
       <Title
         title="What Our Customers Say"

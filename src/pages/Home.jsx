@@ -4,6 +4,7 @@ import CoolerCard from '../components/CoolerCard'
 import FeaturedSec from '../components/FeaturedSec'
 import Banner from '../components/Banner'
 import Testimonial from '../components/Testimonial'
+import NewsLetter from '../components/NewsLetter'
 const Home = () => {
   return (
     <div  >
@@ -11,6 +12,7 @@ const Home = () => {
       <FeaturedSec/>
       <Banner/>
       <Testimonial/>
+      <NewsLetter/>
     </div>
   )
 }

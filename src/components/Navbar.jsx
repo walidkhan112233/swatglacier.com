@@ -12,7 +12,7 @@ const Navbar = ({setShowLogin}) => {
   return (
     <div
       className={`flex items-center justify-between px-6 h-20 md:px-16 lg:px-24 xl:px-32 py-4 
-    text-600 pt-6 border-b border-borderColor text-[#102090] relative transition-all ${location.pathname === "/" && "bg-light"} `}
+    text-600 pt-6 border-b border-borderColor text-[#102090] relative transition-all bg-light `}
     >
       <Link to="/">
         <img src={assets.logo} alt="logo" className="h-14 w-32" />
@@ -21,7 +21,7 @@ const Navbar = ({setShowLogin}) => {
       <div
         className={`max-sm:fixed max-sm:h-screen max-sm:w-full max-sm:top-16 max-sm:border-t 
       border-borderColor right-0 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 
-      max-sm:p-4 transition-all duration-300  z-50 ${location.pathname === "/" ? "bg-light" : "bg-white"} 
+      max-sm:p-4 transition-all duration-300  z-50 "bg-light} 
       ${open ? "max-sm:translate-x-0" : "max-sm:translate-x-full"}`}
       >
         {menuLinks.map((link, index) => (

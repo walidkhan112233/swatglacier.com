@@ -6,7 +6,7 @@ const Banner = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="bg-light py-10">
+    <section className="bg-white py-10">
       <div className="max-w-6x1  mx-auto px-6 sm:px-10  lg:px-15">
         <div className="relative bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-4xl px-8 md:px-14 py-10 md:py-12 overflow-hidden shadow-xl ">
           <div className="relative z-10 flex flex-col md:flex-row items-center md:items-center justify-between gap-10">
