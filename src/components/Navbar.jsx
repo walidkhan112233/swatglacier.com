@@ -2,12 +2,20 @@ import React from "react";
 import { assets, menuLinks } from "../assets/assets";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-
-const Navbar = ({setShowLogin}) => {
+const Navbar = ({ setShowLogin }) => {
   const location = useLocation();
+  const navigate = useNavigate();
 
   const [open, setOpen] = React.useState(false);
-  const navigate = useNavigate();
+  const [navSearch, setNavSearch] = React.useState("");
+
+  // Handle Enter key search
+  const handleSearch = (e) => {
+    if (e.key === "Enter" && navSearch.trim() !== "") {
+      navigate(`/coolers?search=${navSearch}`);
+      setOpen(false); // close mobile menu if open
+    }
+  };
 
   return (
     <div
@@ -30,29 +38,40 @@ const Navbar = ({setShowLogin}) => {
           </Link>
         ))}
 
-
+        {/* Global Search */}
         <div className="hidden lg:flex items-center text-sm gap-2 border
-             border-borderColor px-3 rounded-full max-w-56" >
+             border-borderColor px-3 rounded-full max-w-56 hover:bg-gray-100">
           <input
             type="text"
             placeholder="Search Products..."
-            className="py-1.5 w-full text-gray-600 bg-transparent  placeholder-gray-500 outline-none"
+            value={navSearch}
+            onChange={(e) => setNavSearch(e.target.value)}
+            onKeyDown={handleSearch}
+            className="py-1.5 w-full text-gray-800 placeholder-gray-500 outline-none"
           />
           <img src={assets.search_icon} alt="search" />
-          {/* dashbaord and login */}
         </div>
 
-        <div className="flex max-sm:flex-col items-start sm:items-center gap-6"  >
-            <button onClick={() => navigate('/owner')} className="cursor-pointer">Dashbaord</button>
-            <button onClick={() => setShowLogin(true)} className="cursor-pointer px-8 py-2 bg-primary hover:bg-blue-500 transition-all text-white rounded-lg" > Login</button>
+        <div className="flex max-sm:flex-col items-start sm:items-center gap-6">
+          <button onClick={() => navigate("/owner")} className="cursor-pointer">
+            Dashbaord
+          </button>
+          <button
+            onClick={() => setShowLogin(true)}
+            className="cursor-pointer px-8 py-2 bg-primary hover:bg-blue-500 transition-all text-white rounded-lg"
+          >
+            Login
+          </button>
         </div>
-
       </div>
 
-        <button className="sm:hidden cursor-pointer" aria-label="Menu"  onClick={() => setOpen(!open) }>
-           <img src={open ? assets.close_icon : assets.menu_icon} alt="menu" />
-        </button>
-
+      <button
+        className="sm:hidden cursor-pointer"
+        aria-label="Menu"
+        onClick={() => setOpen(!open)}
+      >
+        <img src={open ? assets.close_icon : assets.menu_icon} alt="menu" />
+      </button>
     </div>
   );
 };
